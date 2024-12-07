@@ -1,0 +1,36 @@
+﻿@model List<Doctor>
+<h1>Doctors</h1>
+<table class="table table-bordered table-striped">
+    <thead>
+    <tr>
+        <th>
+            Id
+        </th>
+            <th>
+                Name
+            </th>
+            <th>
+                Specialist
+            </th>
+    </tr>
+    </thead>
+    <tbody>
+        @foreach(var obj in Model)
+        {
+            <tr>
+                <th>
+                    @obj.Id
+                </th>
+                <th>
+                    @obj.Name
+                </th>
+                <th>
+                    @obj.Specialist
+                </th>
+            </tr>
+            
+        }
+        
+    </tbody>
+    
+</table>
